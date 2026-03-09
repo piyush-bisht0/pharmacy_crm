@@ -11,8 +11,6 @@ A simplified Pharmacy CRM with **Dashboard** and **Inventory** pages, powered by
 3. [Getting Started](#getting-started)
 4. [REST API Contracts](#rest-api-contracts)
 5. [Data Consistency Strategy](#data-consistency-strategy)
-6. [Deployment](#deployment)
-
 ---
 
 ## Tech Stack
