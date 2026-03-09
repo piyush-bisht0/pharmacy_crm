@@ -328,23 +328,6 @@ All database connections use a context manager (`get_db_connection()`) that guar
 
 ---
 
-## Deployment
-
-### Backend (Render / Railway)
-
-1. Set environment variables:
-   - `CORS_ORIGINS` — comma-separated allowed origins (e.g., `https://your-app.vercel.app`)
-2. Start command: `uvicorn backend.main:app --host 0.0.0.0 --port $PORT`
-
-### Frontend (Vercel / Netlify)
-
-1. Set build command: `npm run build`
-2. Set output directory: `dist`
-3. Set environment variable:
-   - `VITE_API_URL` — your deployed backend URL (e.g., `https://your-api.onrender.com`)
-
----
-
 ## License
 
 This project was built as part of the SwasthiQ SDE Intern assignment.
