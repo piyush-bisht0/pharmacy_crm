@@ -8,7 +8,11 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "backend"))
 os.environ.setdefault("DATABASE_PATH", "/tmp/pharmacy.db")
 
 from main import app  # noqa: E402
+from database import init_db  # noqa: E402
 from mangum import Mangum  # noqa: E402
+
+# Initialize DB on cold start (lifespan="off" skips FastAPI's startup)
+init_db()
 
 
 # Strip /api prefix so FastAPI routes match correctly
