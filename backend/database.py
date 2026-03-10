@@ -2,8 +2,8 @@ import sqlite3
 import os
 from contextlib import contextmanager
 
-# store database in the backend folder
-DB_PATH = os.path.join(os.path.dirname(__file__), "pharmacy.db")
+# Use env var for DB path (Vercel uses /tmp), fallback to local file
+DB_PATH = os.environ.get("DATABASE_PATH", os.path.join(os.path.dirname(__file__), "pharmacy.db"))
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
