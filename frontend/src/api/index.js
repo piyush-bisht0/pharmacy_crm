@@ -1,8 +1,6 @@
 import axios from "axios";
 
-// In production on Vercel, frontend and backend share the same domain (empty string)
-// In dev, point to local backend
-const BASE = import.meta.env.VITE_API_URL || "";
+const BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 export const getDashboardSummary = () => axios.get(`${BASE}/dashboard/summary`);
 export const getRecentSales = () => axios.get(`${BASE}/dashboard/recent-sales`);

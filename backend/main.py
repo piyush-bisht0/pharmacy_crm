@@ -4,12 +4,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 
-try:
-    from .database import get_db, get_db_connection, init_db
-    from .models import Medicine, Sale, get_status
-except ImportError:
-    from database import get_db, get_db_connection, init_db
-    from models import Medicine, Sale, get_status
+from .database import get_db, get_db_connection, init_db
+from .models import Medicine, Sale, get_status
 
 
 @asynccontextmanager
