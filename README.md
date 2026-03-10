@@ -11,7 +11,14 @@ A simplified Pharmacy CRM with **Dashboard** and **Inventory** pages, powered by
 3. [Getting Started](#getting-started)
 4. [REST API Contracts](#rest-api-contracts)
 5. [Data Consistency Strategy](#data-consistency-strategy)
+
 ---
+
+## Live Demo
+
+> Due to hosting platform restrictions (credit-card-gated services), a live link is not available.
+> The application is fully functional locally — follow [Getting Started](#getting-started) to run it.
+
 
 ## Tech Stack
 
